@@ -36,10 +36,11 @@ dependencies = [
 [project.optional-dependencies]
 dev = [
   "black",
+  "helix-jupyter-thing",
   "jupyter",
   "matplotlib",
+  "pyflakes",
   "python-lsp-server",
-  "helix-jupyter-thing",
 ]
 
 [project.scripts]
