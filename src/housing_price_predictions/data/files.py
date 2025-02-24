@@ -60,7 +60,7 @@ def housing_dir_size():
     return size
 
 
-def init():
+def init_dir():
     """Initialize directory to store data."""
     dir = _share_dir()
     if not dir.exists():
