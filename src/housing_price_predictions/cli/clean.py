@@ -1,5 +1,5 @@
 import click
-from housing_price_predictions.data import remove_housing_dir
+from housing_price_predictions.data.files import remove_housing_dir
 from housing_price_predictions.logger import LOG
 
 

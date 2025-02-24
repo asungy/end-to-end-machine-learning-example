@@ -1,7 +1,7 @@
 from housing_price_predictions import cli
-from housing_price_predictions import data
+from housing_price_predictions.data.files import init as init_dir
 
 
 def main():
-    data.init()
+    init_dir()
     cli.run()

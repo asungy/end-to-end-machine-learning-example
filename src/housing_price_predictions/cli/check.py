@@ -1,7 +1,7 @@
 import click
 import sys
 from pathlib import Path
-from housing_price_predictions.data import housing_dir, housing_dir_size
+from housing_price_predictions.data.files import housing_dir, housing_dir_size
 from housing_price_predictions.logger import LOG
 
 

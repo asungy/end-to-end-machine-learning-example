@@ -1,5 +1,5 @@
 import click
-from housing_price_predictions.data import download_data
+from housing_price_predictions.data.files import download_data
 
 
 @click.command("download")
