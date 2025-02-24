@@ -17,6 +17,7 @@ def _share_dir():
         .joinpath("housing_price_predictions")
     )
 
+
 def housing_dir():
     return _share_dir().joinpath("housing")
 
@@ -63,4 +64,4 @@ def init():
     """Initialize directory to store data."""
     dir = _share_dir()
     if not dir.exists():
-        os.makedirs(dir, exist_ok=True)       
+        os.makedirs(dir, exist_ok=True)

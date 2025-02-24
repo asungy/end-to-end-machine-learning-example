@@ -41,7 +41,9 @@ def color_string(content, color, brightness=BRIGHTNESS["normal"]) -> None:
 
 class LogFormatter(logging.Formatter):
     # Set format
-    debug_format = "[%(asctime)s] %(levelname)-7s | %(filename)s:%(lineno)d | %(message)s"
+    debug_format = (
+        "[%(asctime)s] %(levelname)-7s | %(filename)s:%(lineno)d | %(message)s"
+    )
     info_format = "[%(asctime)s] %(levelname)-7s | %(message)s"
     error_format = "[%(asctime)s] %(levelname)-7s | %(message)s"
     FORMATS = {
