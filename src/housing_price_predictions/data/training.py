@@ -37,3 +37,7 @@ def split_train_test(
         set_.drop("income_cat", axis=1, inplace=True)
 
     return strat_train_set, strat_test_set
+
+
+def separate_predictor_and_labels(data: pd.DataFrame, predictor_key: str) -> Tuple[pd.DataFrame, pd.DataFrame]:
+    return data.drop(predictor_key, axis=1), data[predictor_key].copy()
