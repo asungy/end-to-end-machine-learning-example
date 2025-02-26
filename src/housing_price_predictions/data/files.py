@@ -4,12 +4,11 @@ import os
 import requests
 import shutil
 import tarfile
-import pandas as pd
 
 DATA_URL = "https://github.com/ageron/data/raw/main/housing.tgz"
 
 
-def _share_dir():
+def _share_dir() -> Path:
     return (
         Path.home()
         .joinpath(".local")
@@ -18,7 +17,7 @@ def _share_dir():
     )
 
 
-def housing_dir():
+def housing_dir() -> Path:
     return _share_dir().joinpath("housing")
 
 
@@ -47,11 +46,7 @@ def download_data():
         LOG.debug("Data directory already exists.")
 
 
-def load_data():
-    return pd.read_csv(housing_dir().joinpath("housing.csv"))
-
-
-def housing_dir_size():
+def housing_dir_size() -> int:
     size = 0
     for dirpath, dirnames, filenames in os.walk(housing_dir()):
         for filename in filenames:

@@ -8,3 +8,8 @@ __pycache__/
 scratchpad.ipynb
 .ipynb_checkpoints/
 .virtual_documents/
+
+# Images
+*.png
+*.jpg
+*.svg

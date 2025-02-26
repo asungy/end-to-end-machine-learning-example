@@ -12,4 +12,4 @@ def command():
         LOG.error("`housing/` directory does not exist.")
         sys.exit(1)
 
-    LOG.info(f"`housing/` directory size: {housing_dir_size()}")
+    LOG.info(f"`{housing_dir()}` directory size: {housing_dir_size()}")
